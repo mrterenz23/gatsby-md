@@ -23,7 +23,6 @@ models: # content models go inside here
     label: Home
     file: home.md
     fields:
-      type: string
-      name: title
-      label: Title
-      
+      - type: string
+        name: title
+        label: Title
