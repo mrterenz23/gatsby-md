@@ -19,7 +19,7 @@ export default function Template({data}) {
 
 export const pageQuery = graphql`
     query {
-        markdownRemark(fileAbsolutePath: { regex: "/home.md/" }) {
+        markdownRemark(fileAbsolutePath: { regex: "/indx.md/" }) {
             html
             frontmatter {
                 title
