@@ -12,17 +12,6 @@ dataDir: null
 # The folder with markdown files representing your site pages
 pagesDir: content
 
-# This site uses "relative" assets pattern. That is, asset files are referenced
-# from content files using relative paths
-assets:
-  # asset are referenced using relative paths
-  referenceType: relative
-  # the common ancestor folder that contains all site images
-  # is the root '' folder
-  assetsDir: ''
-  # uploaded images will be stored in 'src/images'
-  uploadDir: src/images
-
 models: # content models go inside here
   post: # a page model called "post"
     type: page # the content model type, can be: page, data, object
