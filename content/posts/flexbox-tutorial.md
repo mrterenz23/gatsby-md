@@ -1,6 +1,6 @@
 ---
-slug: "flexbox-tutorial"
-title: "Flexbox tutorial"
+slug: flexbox-tutorial
+title: Flexbox tutorialsadasd
 ---
 
 # CSS Grid is the new way to layout your pages
