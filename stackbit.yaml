@@ -18,3 +18,4 @@ models: # content models go inside here
       - type: string # this will use a toggle input in the CMS
         name: slug
         label: Slug
+  
