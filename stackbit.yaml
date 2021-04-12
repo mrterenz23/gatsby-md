@@ -21,6 +21,7 @@ models: # content models go inside here
   home:
     type: page
     label: Home
+    urlPath: '/'
     file: home.md
     fields:
       - type: string
