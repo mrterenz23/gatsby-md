@@ -11,6 +11,7 @@ models: # content models go inside here
     type: page # the content model type, can be: page, data, object
     label: Post
     folder: posts # all .md files in `content/posts` will use this model
+    urlPath: "/blog/{slug}"
     fields: # define the frontmatter fields
       - type: string # this will use a  text input field in the CMS
         name: title # this identifies the front-matter field "title"
