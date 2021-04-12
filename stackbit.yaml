@@ -21,7 +21,7 @@ models: # content models go inside here
   home:
     type: page
     label: Home
-    urlPath: '/'
+    urlPath: "/"
     file: home.md
     fields:
       - type: string
