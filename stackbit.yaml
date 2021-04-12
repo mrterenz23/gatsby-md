@@ -32,9 +32,6 @@ models: # content models go inside here
       - type: string # this will use a  text input field in the CMS
         name: title # this identifies the front-matter field "title"
         label: Blog Post Title
-      - type: boolean # this will use a toggle input in the CMS
-        name: draft
-        label: Save as a draft
-      - type: image # this will use a file upload widget in the CMS
-        name: thumbnail
-        label: Blog Post Thumbnail
+      - type: string # this will use a toggle input in the CMS
+        name: slug
+        label: Slug
