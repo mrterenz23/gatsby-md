@@ -10,8 +10,6 @@ export default function Template({data}) {
         <Layout>
             <SEO title={frontmatter.title} />
             <h1>{frontmatter.title}</h1>
-            <div>Author: {frontmatter.author}</div>
-            <div>Publish Date: {frontmatter.date}</div>
             <div
                 dangerouslySetInnerHTML={{ __html: html }}
             />
@@ -20,14 +18,11 @@ export default function Template({data}) {
 }
 
 export const pageQuery = graphql`
-    query($path: String!) {
-        markdownRemark(frontmatter: { path: { eq: $path } }) {
+    query($slug: String!) {
+        markdownRemark(frontmatter: { slug: { eq: $slug } }) {
             html
             frontmatter {
-                path
                 title
-                author
-                date
             }
         }
     }
