@@ -6,35 +6,29 @@ ssgName: gatsby
 # Use node version 12
 nodeVersion: 12
 
-# The site has no data files (json, yaml, .etc)
-dataDir: null
-
 # The folder with markdown files representing your site pages
 pagesDir: content
-
-# This site uses "relative" assets pattern. That is, asset files are referenced
-# from content files using relative paths
-assets:
-  # asset are referenced using relative paths
-  referenceType: relative
-  # the common ancestor folder that contains all site images
-  # is the root '' folder
-  assetsDir: ''
-  # uploaded images will be stored in 'src/images'
-  uploadDir: src/images
 
 models: # content models go inside here
   post: # a page model called "post"
     type: page # the content model type, can be: page, data, object
     label: Post
     folder: posts # all .md files in `content/posts` will use this model
+    urlPath: '/blog/{slug}'
     fields: # define the frontmatter fields
       - type: string # this will use a  text input field in the CMS
         name: title # this identifies the front-matter field "title"
         label: Blog Post Title
-      - type: boolean # this will use a toggle input in the CMS
-        name: draft
-        label: Save as a draft
-      - type: image # this will use a file upload widget in the CMS
-        name: thumbnail
-        label: Blog Post Thumbnail
+      - type: string # this will use a toggle input in the CMS
+        name: slug
+        label: Slug
+  home:
+    type: page
+    label: Home
+    file: 'index.md'
+    urlPath: '/'
+    singleInstance: true
+    fields:
+      - type: string
+        name: title
+        label: Title
