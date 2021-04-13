@@ -3,12 +3,9 @@ stackbitVersion: ~0.3.0
 # The name of the static-site-generator
 ssgName: gatsby
 
-<<<<<<< HEAD
 # Use node version 12
 nodeVersion: 12
 
-=======
->>>>>>> 2c63a6ddca78e1f25faa0182a241a2c95f86d57a
 # The folder with markdown files representing your site pages
 pagesDir: content
 
@@ -17,11 +14,7 @@ models: # content models go inside here
     type: page # the content model type, can be: page, data, object
     label: Post
     folder: posts # all .md files in `content/posts` will use this model
-<<<<<<< HEAD
     urlPath: '/blog/{slug}'
-=======
-    urlPath: "/blog/{slug}"
->>>>>>> 2c63a6ddca78e1f25faa0182a241a2c95f86d57a
     fields: # define the frontmatter fields
       - type: string # this will use a  text input field in the CMS
         name: title # this identifies the front-matter field "title"
@@ -32,14 +25,9 @@ models: # content models go inside here
   home:
     type: page
     label: Home
-<<<<<<< HEAD
     file: 'index.md'
     urlPath: '/'
     singleInstance: true
-=======
-    urlPath: "/"
-    file: home.md
->>>>>>> 2c63a6ddca78e1f25faa0182a241a2c95f86d57a
     fields:
       - type: string
         name: title
